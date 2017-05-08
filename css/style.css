@@ -56,3 +56,10 @@ h1 {
 #board {
   margin-left: 360px;
 }
+button {
+  border-radius: 5px;
+  background-color: #f2dabc;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+  padding: 3px 10px 2px 10px;
+}

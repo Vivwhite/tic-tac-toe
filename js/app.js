@@ -16,14 +16,16 @@ if (squareSelected.hasClass('fa fa-times') || squareSelected.hasClass('fa fa-cir
   if (currPlayer === 1) {
     squareSelected.addClass('fa fa-times');
     if(checkWon('fa fa-times')) {
-      alert('Congrats!');
+      setTimeout(function(){
+    alert("You win!");}, 250);
     } else {
       currPlayer = 2;
     }
   } else {
     squareSelected.addClass('fa fa-circle-o');
     if(checkWon('fa fa-circle-o')) {
-      alert('Congrats!');
+      setTimeout(function(){
+    alert("You win!");}, 250);
     } else {
       currPlayer = 1;
     }
