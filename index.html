@@ -9,14 +9,22 @@
     <!-- Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <!-- font style -->
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Luckiest+Guy|Ravi+Prakash" rel="stylesheet">
     <!-- jQuery from CDN -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
+
+    <script src="js/app.js" charset="utf-8"></script>
 
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
-    <title>Tic Tac Toe</title>
+    <title><h1>Tic Tac Toe</h1></title>
   </head>
   <body>
     <div class="container">
@@ -26,23 +34,37 @@
           <hr>
         </div>
       </div>
+      <div class="message text-center">
+        <p></p>
+      </div>
       <div class="row">
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
+        <div class="col-md-6 col-md-offset-3  text-center" id="board">
 
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+          <div class="row row1">
+            <div class="col-md-4 box" id="box1"></div>
+            <div class="col-md-4 box" id="box2"></div>
+            <div class="col-md-4 box" id="box3"></div>
+          </div>
+          <div class="row row2">
+            <div class="col-md-4 box" id="box4"></div>
+            <div class="col-md-4 box" id="box5"></div>
+            <div class="col-md-4 box" id="box6"></div>
+          </div>
+          <div class="row row3">
+            <div class="col-md-4 box" id="box7"></div>
+            <div class="col-md-4 box" id="box8"></div>
+            <div class="col-md-4 box" id="box9"></div>
           </div>
 
-
-
         </div>
+      </div>
+      <div class="reset-button">
+        <button type="button" class="center-block" class="btn btn-default">Reset</button>
       </div>
     </div>
   </body>
